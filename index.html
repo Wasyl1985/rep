@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>app</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/animations.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar" ui-view="categories"></div>
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ui-view="bookmarks"></div>
+            </div>
+        </div>
+
+        <script src="angular-ui-router.min.js"></script>
+        <script src="app/bookmarks/bookmark.services.js"></script>
+        <script src="app/categories/category.services.js"></script>
+
+    </body>
+</html>
